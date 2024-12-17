@@ -1,6 +1,6 @@
 # Quill
 
-Quill is an AI-powered documentation bot that automatically captures and organizes your team's knowledge from Slack conversations. It transforms informal chat discussions into well-structured documentation, ensuring that no important decisions or ideas are lost in the message flow.
+Quill is an AI-powered documentation bot that automatically captures and organizes your team's knowledge from Chat conversations. It transforms informal chat discussions into well-structured documentation, ensuring no important decisions or ideas are lost in the message flow.
 
 ## Key Features
 
@@ -12,10 +12,10 @@ Quill is an AI-powered documentation bot that automatically captures and organiz
 
 ## How It Works
 
-1. Add Quill to your Slack channel
+1. Add Quill to the project channel
 2. Configure your project settings and documentation preferences
-3. Start conversations naturally - Quill detects important information
-4. Access well-organized documentation in your GitHub repository
+3. Start conversations naturally - Quill detects important information or type in one of the #idea, #decision, #status tags to point the bot to a specific message
+4. Access well-organized documentation in your GitHub repository or any other supported documentation backend
 
 ## Technologies
 
@@ -27,7 +27,7 @@ Quill is an AI-powered documentation bot that automatically captures and organiz
 
 ## Getting Started
 
-See our [documentation](docs/getting-started.md) for setup instructions and usage examples.
+Please check the [documentation](docs/getting-started.md)[TBD] for setup instructions and usage examples.
 
 ## License
 
