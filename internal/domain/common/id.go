@@ -1,4 +1,3 @@
-// domain/common/id.go
 package common
 
 import (
