@@ -15,6 +15,8 @@ const (
 	MessageTypeDecision MessageType = "decision"
 	// MessageTypeStatus Status represents a status update
 	MessageTypeStatus MessageType = "status"
+	// MessageTypeInformation Information represents general information
+	MessageTypeInformation MessageType = "information"
 	// MessageTypeUnknown Unknown represents an unrecognized message type
 	MessageTypeUnknown MessageType = "unknown"
 )
@@ -24,10 +26,11 @@ var (
 
 	// validMessageTypes contains all valid message types for validation
 	validMessageTypes = map[MessageType]bool{
-		MessageTypeIdea:     true,
-		MessageTypeDecision: true,
-		MessageTypeStatus:   true,
-		MessageTypeUnknown:  true,
+		MessageTypeIdea:         true,
+		MessageTypeDecision:     true,
+		MessageTypeStatus:       true,
+		MessageTypeInformation:  true,
+		MessageTypeUnknown:      true,
 	}
 )
 
@@ -73,6 +76,11 @@ func (mt MessageType) IsDecision() bool {
 // IsStatus checks if the MessageType is a status update
 func (mt MessageType) IsStatus() bool {
 	return mt == MessageTypeStatus
+}
+
+// IsInformation checks if the MessageType is information
+func (mt MessageType) IsInformation() bool {
+	return mt == MessageTypeInformation
 }
 
 // IsUnknown checks if the MessageType is unknown

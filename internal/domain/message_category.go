@@ -19,6 +19,8 @@ const (
 	CategoryQualityAssurance Category = "quality_assurance"
 	// CategoryDataAnalysis represents data analysis-related content
 	CategoryDataAnalysis Category = "data_analysis"
+	// CategoryOther represents other content
+	CategoryOther Category = "other"
 	// CategoryUnknown represents an unrecognized category
 	CategoryUnknown Category = "unknown"
 )
@@ -33,6 +35,7 @@ var (
 		CategoryProduct:          true,
 		CategoryQualityAssurance: true,
 		CategoryDataAnalysis:     true,
+		CategoryOther:            true,
 		CategoryUnknown:          true,
 	}
 )
@@ -89,6 +92,11 @@ func (c Category) IsQualityAssurance() bool {
 // IsDataAnalysis checks if the Category is data analysis
 func (c Category) IsDataAnalysis() bool {
 	return c == CategoryDataAnalysis
+}
+
+// IsOther checks if the Category is other
+func (c Category) IsOther() bool {
+	return c == CategoryOther
 }
 
 // IsUnknown checks if the Category is unknown
