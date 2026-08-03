@@ -3,7 +3,7 @@ module github.com/massimo-ua/quill
 go 1.25
 
 require (
-	github.com/oklog/ulid/v2 v2.1.1
+	github.com/oklog/ulid/v2 v2.1.2
 	github.com/slack-go/slack v0.23.1
 	github.com/stretchr/testify v1.11.1
 )
